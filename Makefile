@@ -1,7 +1,9 @@
-.PHONY=up
+.PHONY=up:v2 help
 
+help:
+	./script.sh	help
 up:
-	- @docker-compose up -d
+	- docker-compose -f docker-compose.yaml up -d	
 
 down:
 	- @docker-compose down
