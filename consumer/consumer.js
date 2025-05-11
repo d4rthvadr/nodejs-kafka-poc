@@ -39,7 +39,9 @@ const getConsumer = ({ groupId }) => {
 
   return async (topic, callback, fromBeginning = false) => {
     if (callback == null) {
-      throw new Error("Consumer is not defined");
+      throw new Error(
+        "Callback was not provided. it should be a function for eachMessage"
+      );
     }
     const topics = Array.isArray(topic) ? topic : [topic];
     try {
