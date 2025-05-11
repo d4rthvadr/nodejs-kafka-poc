@@ -1,4 +1,4 @@
-.PHONY=up:v2 help
+.PHONY=help
 
 help:
 	./script.sh	help

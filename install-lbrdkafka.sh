@@ -13,4 +13,4 @@ else
     brew reinstall librdkafka    
 fi
 
-echo "-----finised-----"
+echo "-----finished-----"
